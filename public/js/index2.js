@@ -15,7 +15,7 @@ btn.addEventListener("click", (e) => {
   };
   console.log(randomObj);
 
-  fetch("http://localhost:3000/finish", {
+  fetch("/finish", {
     method: "POST",
     body: JSON.stringify(randomObj),
     headers: {
