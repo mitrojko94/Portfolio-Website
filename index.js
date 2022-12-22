@@ -1,15 +1,6 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const path = require("path");
 const nodemailer = require("nodemailer");
-
-// mongoose.connect("mongodb://localhost:27017/my-site");
-
-// const db = mongoose.connection;
-// db.on("error", console.error.bind(console, "connection error"));
-// db.once("open", () => {
-//   console.log("Database connected");
-// });
 
 const app = express();
 
@@ -39,7 +30,7 @@ app.post("/finish", (req, res) => {
   const mailOption = {
     from: req.body.email,
     to: "mitrovicdarko94@gmail.com",
-    subject: `Message from ${req.body.email}: -  ${req.body.fullName}`,
+    subject: `Message from ${req.body.email}: -  ${req.body.fullName} - ${req.body.phone}`,
     text: req.body.message,
   };
 
