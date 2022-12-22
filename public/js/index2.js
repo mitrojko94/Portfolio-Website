@@ -5,6 +5,8 @@ const message = document.getElementById("message");
 const btn = document.getElementById("btn2");
 const form = document.getElementById("form");
 
+let isValid = false;
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   const name = fullName.value;
@@ -17,7 +19,7 @@ btn.addEventListener("click", (e) => {
     phone: telPhone,
     message: msg,
   };
-  console.log(randomObj);
+  //console.log(randomObj);
 
   fetch("/finish", {
     method: "POST",

@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#000000" />
     <title>Darko WebSite</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <!-- AOS CSS -->
@@ -555,6 +555,7 @@
                    style="transition: all 0.15s ease 0s;"
                    id="phone"
                    pattern="[0-9]{9,}"
+                   title="Only numbers can be valid."
                    />
                 </div>
                 <!-- Message -->
@@ -569,12 +570,14 @@
                     placeholder="Type a message..."
                     id="message"
                     required
+                    minlength="5"
+                    maxlength="500"
+                    title="Can contain 500 characters."
                   ></textarea>
                 </div>
                 <div class="text-center mt-6">
                   <button
                     class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                    type="submit"
                     style="transition: all 0.15s ease 0s;"
                     id="btn2"
                   >

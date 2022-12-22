@@ -3,11 +3,7 @@
 
 /* Form */
 form {
-  width: 90%;
-}
-
-.form-group {
-  height: 65px;
+  width: 100%;
 }
 
 label {
@@ -31,6 +27,14 @@ input:valid {
 }
 
 input:invalid {
+  border: 1px solid red;
+}
+
+textarea:valid {
+  border: 1px solid green;
+}
+
+textarea:invalid {
   border: 1px solid red;
 }
 

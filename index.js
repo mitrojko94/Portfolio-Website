@@ -15,10 +15,10 @@ app.get("/", (req, res) => {
 
 app.post("/finish", (req, res) => {
   const { fullName, email, message } = req.body;
-  console.log(fullName, email, message);
+  //console.log(fullName, email, message);
 
   // Forma za slanje mejla
-  console.log(req.body);
+  //console.log(req.body);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
